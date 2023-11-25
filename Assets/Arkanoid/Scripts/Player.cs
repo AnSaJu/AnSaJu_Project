@@ -19,7 +19,8 @@ public class Player : MonoBehaviour
         // Obtener la entrada del teclado o de otro dispositivo
         float horizontalInput = Input.GetAxis("Horizontal");
 
-        // Aplica el movimiento al Rigidbody2D multiplicado por Time.fixedDeltaTime
+        // Aplica el movimiento al Rigidbody2D multiplicado por Time.fixedDeltaTime para que la velocidad sea igual en todos los PC
         rb.velocity = new Vector2(horizontalInput * speed, 0f) * Time.fixedDeltaTime;
     }
+
 }
